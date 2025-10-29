@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!-- Sets the character encoding to UTF-8 for proper text display -->
+        <meta charset="utf-8">
+        <!-- Makes the page responsive by setting viewport width to device width -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Provides a brief description of the page for search engines -->
+        <meta name="description" content="A blog post about semantic HTML and accessibility practices">
+        <!-- Defines keywords for search engine optimization -->
+        <meta name="keywords" content="HTML, Semantic, Accessibility, Blog, SEO">
+        <!-- Specifies the author of the page -->
+        <meta name="author" content="Zeyad Alhoussainy">
+        <title>Semantic HTML Blog Post</title>
+    </head>
+    <body>
+        <header>
+            <h1>My Blog</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <article>
+                <h2>understanding Semantic Html</h2>
+                <p>Published on <time datetime=”2024-09-10”> September 10</p>
+                
+                    <!-- Section 1 -->
+                <section>
+                    <h3>introduction</h3>
+                    <p>
+                        Semantic HTML helps improve the accessibility and SEO of your website. In this post, we’ll explore its benefits and how to implement it.
+                    </p>
+                </section>
+
+                <!-- Section 2  -->
+                <section>
+                    <h3>Main Content</h3>
+                    <p>
+                        Using elements like 
+                        <code>&lt;article&gt;</code>, 
+                        <code>&lt;section&gt;</code>, 
+                        <code>&lt;header&gt;</code> 
+                        ensures that both users and search engines can better understand the structure and content of a webpage.
+                    </p>
+                    <figure>
+                        <img src="" alt="example">
+                        <figcaption>An illustration of semantic HTML elements</figcaption>
+                    </figure>
+                </section>
+
+                <!-- Section 3 -->
+                <section>
+                    <h3>Conclusion</h3>
+                    <p>
+                         By adopting semantic HTML, you enhance your site's accessibility, improve SEO, and make the content easier to navigate
+                    </p>
+                    <form action="#" method="POST" aria-labelledby="form-title" role="form">
+                        <div>
+                            <label for="name">name</label>
+                            <input type="text" id="name" name="name" aria-required="true">
+                        </div>
+                        <div>
+                            <label for="email">email</label>
+                            <input type="text" id="email" name="email" aria-required="true">
+                        </div>
+                        <div>
+                            <button type="submit" aria-label="Submit the form">Submit</button>
+                        </div>
+                        <div aria-live="polite" role="alert"></div>
+                    </form>
+                </section>
+            </article>
+        </main>
+        <footer>
+            <p>written by Zeyad Alhoussainy</p>
+            <p>Published on 2024-09-11</p>
+        </footer>
+    </body>
+</html>
+
