@@ -1,0 +1,8 @@
+how to install SASS
+
+first:
+using terminal install
+npm install sass --save-dev
+
+or to install globally:
+npm install -g sass
